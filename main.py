@@ -16,7 +16,6 @@ my_connection: Connection = Connection(
 )
 
 if __name__ == '__main__':
-    my_connection.create_tables()
     print(
         User.get(conn=my_connection.conn, id=7)
     )
